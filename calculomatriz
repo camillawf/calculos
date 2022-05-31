@@ -1,0 +1,52 @@
+const matriz = [
+  [1,2,3,4],
+  [5,6,7,8],
+  [9,10,11,12],
+  [13,14,15,16]
+];
+//exibindo a matriz na tela
+console.log(matriz);
+//1 - soma da primeira linha
+function calculo1(matriz) {
+  const count = matriz.length;
+  let result = 0;
+  for(let i = 0; i <= 4; i++) {
+    result += i;
+  }
+  return result;
+}
+console.log("Soma da primeira linha: " +calculo1(matriz));
+
+//2 - produto da primeira linha
+function calculo2(matriz) {
+  const count = matriz.length;
+  let result = 1;
+  for(let i = 0; i <count; i++) {
+  result = count*i;
+  }
+  return result;
+}
+console.log("Produto da primeira linha: " +calculo2(matriz));
+
+
+//3-Soma total
+function calculo3(matriz) {
+  const count = matriz.length;
+  let result = 0;
+  for(let i = 0; i <= 16; i++) {
+    result += i;
+  }
+  return result;
+}
+console.log("Soma total: " +calculo3(matriz));
+
+//4 - produto da diagonal principal
+function calculo4(matriz) {
+  const count = matriz.length;
+  let result = 1;
+  for(let i = 0; i < count; i++) {
+    result = result*matriz[i][i];
+  }
+  return result;
+}
+console.log("Produto da diagonal principal: " +calculo4(matriz));
